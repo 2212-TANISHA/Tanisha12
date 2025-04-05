@@ -1,0 +1,29 @@
+class Animal {
+    String name = "Animal";
+
+    void sound() {
+        System.out.println("Generic animal sound");
+    }
+}
+
+class Cat extends Animal {
+    String name = "Cat";
+
+    void sound() {
+        super.sound();
+        System.out.println("Meow");
+    }
+
+    void printNames() {
+        System.out.println("Child: " + name);
+        System.out.println("Parent: " + super.name);
+    }
+}
+
+public class InheritanceTest {
+    public static void main(String[] args) {
+        Cat c = new Cat();
+        c.sound();
+        c.printNames();
+    }
+}
