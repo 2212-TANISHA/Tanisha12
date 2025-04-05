@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class QuizGame {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int score = 0;
+
+        System.out.print("Capital of India (a. Delhi, b. Mumbai, c. Kolkata): ");
+        if (input.nextLine().equalsIgnoreCase("a")) score++;
+
+        System.out.print("5 x 6? (a. 11, b. 30, c. 56): ");
+        if (input.nextLine().equalsIgnoreCase("b")) score++;
+
+        System.out.println("Score: " + score + "/2");
+    }
+}
