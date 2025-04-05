@@ -1,0 +1,25 @@
+interface Printer {
+    void print(String document);
+}
+
+interface Scanner {
+    void scan(String document);
+}
+
+class MultiFunctionDevice implements Printer, Scanner {
+    public void print(String document) {
+        System.out.println("Printing: " + document);
+    }
+
+    public void scan(String document) {
+        System.out.println("Scanning: " + document);
+    }
+}
+
+public class InterfaceExample {
+    public static void main(String[] args) {
+        MultiFunctionDevice device = new MultiFunctionDevice();
+        device.print("Report.pdf");
+        device.scan("Invoice.jpg");
+    }
+}
