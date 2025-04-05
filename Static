@@ -1,0 +1,12 @@
+class Utility {
+    static void showMessage() {
+        System.out.println("Static method called");
+    }
+}
+
+public class StaticMethodExample {
+    public static void main(String[] args) {
+        Utility.showMessage();
+    }
+}
+
